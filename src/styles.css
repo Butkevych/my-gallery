@@ -1,0 +1,191 @@
+body {
+  background-color: #000000;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+}
+.main-body {
+  margin: 84px 0 0 0;
+}
+main {
+  background: linear-gradient(#000000, #ffffff, #ffa91f);
+  margin-bottom: 0;
+}
+header {
+  background-color: #000000;
+}
+.header-name {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.bounce {
+  display: inline-block;
+  animation: bounce 0.6s ease-in-out 3;
+  animation-fill-mode: forwards;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.header-name h2 {
+  animation: slideDown 1s ease-out;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 84px;
+}
+.stories-photos {
+  margin-top: 240px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.stories-photos img {
+  box-shadow: inset;
+  border-radius: 16px;
+  box-shadow: 0px 0px 24px rgba(255, 255, 255, 0.6);
+}
+.text {
+  display: block;
+  width: 480px;
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline;
+}
+.translated-headline {
+  margin-top: 120px;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+  animation: slideDown 1s ease-out 3s forwards;
+  margin-top: 0;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+h3 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  text-shadow: 1px 1px 0px #ffa91f, 2px 2px 0px #ffa91f, 3px 3px 0px #ffa91f,
+    4px 4px 0px #ffa91f, 5px 5px 0px #ffa91f, 6px 6px 0px #ffa91f,
+    7px 7px 0px #ffa91f;
+}
+p {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.text p {
+  border: 1px solid #000000;
+  border-radius: 16px;
+  background-color: #fffffff5;
+  color: #000000;
+  padding: 16px;
+}
+.topic-name {
+  margin-top: 120px;
+  font-size: 72px;
+  text-align: center;
+  opacity: 0;
+  animation: slideDown 1s ease-out 3s forwards;
+  margin-bottom: 0px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 1px 0px #ffa91f, 2px 2px 0px #ffa91f, 3px 3px 0px #ffa91f,
+    4px 4px 0px #ffa91f, 5px 5px 0px #ffa91f, 6px 6px 0px #ffa91f,
+    7px 7px 0px #ffa91f;
+}
+.site-description {
+  background-image: url(/src/img/background.png);
+  background-size: contain;
+  padding-top: 280px;
+  padding-bottom: 320px;
+}
+.description-text p {
+  margin-left: 16px;
+  text-align: center;
+}
+.description-text {
+  border: 5px solid #ffffff;
+  border-radius: 16px;
+
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 1px 1px 0px #ffa91f, 2px 2px 0px #ffa91f, 3px 3px 0px #ffa91f,
+    4px 4px 0px #ffa91f, 5px 5px 0px #ffa91f, 6px 6px 0px #ffa91f,
+    7px 7px 0px #ffa91f;
+}
+/* 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
+ 
+font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  
+  .rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+  // <weight>: Use a value from 400 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.caveat-<uniquifier> {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+ text-shadow: 1px 1px 0px #f1b44c, 2px 2px 0px #f1b44c, 3px 3px 0px #f1b44c,
+    4px 4px 0px #f1b44c, 5px 5px 0px #f1b44c, 6px 6px 0px #f1b44c,
+    7px 7px 0px #f1b44c;
+    
+    text-shadow: 1px 1px 0px rgba(241, 180, 76, 0.8),
+    2px 2px 0px rgba(241, 180, 76, 0.75), 3px 3px 0px rgba(241, 180, 76, 0.7),
+  4px 4px 0px rgba(241, 180, 76, 0.65), 5px 5px 0px rgba(241, 180, 76, 0.6),
+    6px 6px 0px rgba(241, 180, 76, 0.55), 7px 7px 0px rgba(241, 180, 76, 0.5),
+    8px 8px 0px rgba(241, 180, 76, 0.45), 9px 9px 0px rgba(241, 180, 76, 0.4),
+    10px 10px 0px rgba(241, 180, 76, 0.35); 
+  */
