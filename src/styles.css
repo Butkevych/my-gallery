@@ -59,8 +59,8 @@ header {
   font-size: 84px;
 }
 .stories-photos {
-  margin-top: 240px;
-  margin-bottom: 32px;
+  margin-top: 84px;
+  margin-bottom: 84px;
   margin-left: 24px;
   display: flex;
   flex-direction: row;
