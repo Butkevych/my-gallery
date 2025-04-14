@@ -103,6 +103,7 @@ h3 {
   text-shadow: 1px 1px 0px #ffa91f, 2px 2px 0px #ffa91f, 3px 3px 0px #ffa91f,
     4px 4px 0px #ffa91f, 5px 5px 0px #ffa91f, 6px 6px 0px #ffa91f,
     7px 7px 0px #ffa91f;
+  margin-top: 0;
 }
 p {
   font-family: "Permanent Marker", cursive;
