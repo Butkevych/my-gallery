@@ -16,11 +16,10 @@ p {
   margin: 0 auto;
 }
 main {
-  background: linear-gradient(#000000, #ffffff, #ffa91f);
+  background-color: #000000;
   margin-bottom: 0;
 }
 header {
-  background-color: #000000;
   margin: 48px 0 0 0;
 }
 .header-name {
@@ -133,7 +132,7 @@ h3 {
 }
 @media screen and (min-width: 758px) {
   .container {
-    max-width: 768px;
+    max-width: 758px;
   }
   header {
     margin: 56px 0 0 0;
@@ -145,9 +144,7 @@ h3 {
   .header-name h2 {
     font-size: 84px;
   }
-  .small-logo {
-    display: none;
-  }
+
   h1 {
     font-size: 48px;
   }
@@ -173,12 +170,19 @@ h3 {
     max-width: 1172px;
     padding: 0 8px;
   }
+  main {
+    background: linear-gradient(#000000, #ffffff, #ffa91f);
+    max-width: 100%;
+  }
   header {
     margin: 120px 0 0 0;
   }
   .header-name {
     flex-direction: row;
     margin: 0;
+  }
+  .small-logo {
+    display: none;
   }
   .bounce {
     display: inline-block;
@@ -207,7 +211,7 @@ h3 {
   }
   .header-name h2 {
     animation: slideDown 1s ease-out;
-    font-size: 84px;
+    font-size: 64px;
   }
   .site-description {
     background-image: url(../src/img/background-1.jpg);
@@ -220,14 +224,9 @@ h3 {
     font-size: 36px;
   }
   .description-text {
-    border: 5px solid #ffffff;
-    border-radius: 16px;
     max-width: 650px;
     margin-left: 144px;
     margin-top: 24px;
-    box-shadow: 1px 1px 0px #ffa91f, 2px 2px 0px #ffa91f, 3px 3px 0px #ffa91f,
-      4px 4px 0px #ffa91f, 5px 5px 0px #ffa91f, 6px 6px 0px #ffa91f,
-      7px 7px 0px #ffa91f;
   }
   .description-text p {
     margin-left: 16px;
@@ -237,58 +236,34 @@ h3 {
   .topic-name {
     margin-top: 120px;
     font-size: 72px;
-    text-align: center;
     opacity: 0;
     animation: slideDown 1s ease-out 3s forwards;
-    margin-bottom: 0px;
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
     text-shadow: 1px 1px 0px #ffa91f, 2px 2px 0px #ffa91f, 3px 3px 0px #ffa91f,
       4px 4px 0px #ffa91f, 5px 5px 0px #ffa91f, 6px 6px 0px #ffa91f,
       7px 7px 0px #ffa91f;
   }
   .translated-headline {
     margin-top: 120px;
-    font-size: 24px;
-    text-align: center;
     opacity: 0;
     animation: slideDown 1s ease-out 3s forwards;
     margin-top: 0;
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-style: normal;
   }
   .stories-photos {
     margin-top: 84px;
     margin-bottom: 84px;
-    margin-left: 16px;
     margin-right: 16px;
-    display: flex;
     flex-direction: row;
     gap: 32px;
-    max-width: 100%;
   }
   .story-content {
-    display: block;
     width: 480px;
   }
   h3 {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
     font-size: 36px;
     text-shadow: 1px 1px 0px #ffa91f, 2px 2px 0px #ffa91f, 3px 3px 0px #ffa91f,
       4px 4px 0px #ffa91f, 5px 5px 0px #ffa91f, 6px 6px 0px #ffa91f,
       7px 7px 0px #ffa91f;
     margin-top: 0;
-  }
-  .story-content p {
-    border: 1px solid #000000;
-    border-radius: 16px;
-    background-color: #fffffff5;
-    color: #000000;
-    padding: 16px;
   }
   .small-story-image {
     display: none;
