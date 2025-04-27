@@ -4,6 +4,9 @@ body {
   font-family: "Rock Salt", "Playfair Display", cursive, serif;
   font-weight: 400;
 }
+ul {
+  list-style: none;
+}
 p {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
@@ -18,6 +21,26 @@ main {
   background-color: #000000;
   margin-bottom: 0;
   padding: 16px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav ul {
+  display: none;
+}
+nav button {
+  border: none;
+  max-width: 48px;
+  max-height: 36px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: #ffa91f;
+  transition: background-color 3ms ease-in-out;
+}
+nav button:hover {
+  background-color: #000000;
 }
 header {
   margin: 48px 0 0 0;
@@ -89,6 +112,22 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+.topic-introduction {
+  display: none;
+}
+.topic-link {
+  font-size: 24px;
+  text-decoration: none;
+  border: 1px solid #ffa91f;
+  color: #ffa91f;
+  border-radius: 4px;
+  transition: color 3ms ease-in-out, border-color 3ms ease-in-out;
+  padding: 16px;
+}
+.topic-link:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
 .stories-photos {
   display: flex;
   flex-direction: column;
@@ -127,6 +166,95 @@ h3 {
 .big-story-image {
   display: none;
 }
+.plot-cover {
+  background: url(../src/img/background-for-photos-1.png);
+}
+.plot-headline {
+  text-decoration: none;
+  margin-top: 120px;
+  font-size: 72px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 1px 0px #ffa91f, 2px 2px 0px #ffa91f;
+}
+.plot-name {
+  font-size: 48px;
+}
+.text-plot {
+  border: 1px solid #000000;
+  border-radius: 16px;
+  background-color: #fffffff5;
+  color: #000000;
+  padding: 32px;
+}
+svg {
+  fill: #ffffff;
+}
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.contact-link svg:hover {
+  fill: #ffa91f;
+}
+.closing-button {
+  border: none;
+  max-width: 48px;
+  max-height: 36px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  background-color: #ffa91f;
+  transition: background-color 3ms ease-in-out;
+}
+.closing-button:hover {
+  background-color: #000000;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu:not(.is-open) .mobile-menu-container {
+  transform: translate(-50%, -100%) scale(1.5);
+}
+
+.mobile-menu-container {
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  margin-left: 0;
+  margin-right: 0;
+  transform: translate(-50%, -50%);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* TABLET SCREEN */
 @media screen and (min-width: 758px) {
   .container {
     max-width: 758px;
@@ -168,11 +296,20 @@ h3 {
     padding: 0 8px;
   }
   main {
-    background: linear-gradient(#000000, #ffffff, #ffa91f);
-    max-width: 100%;
+    background: url(../src/img/background-for-photos-1.png);
   }
   header {
     margin: 120px 0 0 0;
+  }
+  nav ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  nav button {
+    display: none;
   }
   .header-name {
     flex-direction: row;
@@ -234,7 +371,7 @@ h3 {
     margin-top: 120px;
     font-size: 72px;
     opacity: 0;
-    animation: slideDown 1s ease-out 3s forwards;
+    animation: slideDown 1s ease-out 2s forwards;
     text-shadow: 1px 1px 0px #ffa91f, 2px 2px 0px #ffa91f, 3px 3px 0px #ffa91f,
       4px 4px 0px #ffa91f, 5px 5px 0px #ffa91f, 6px 6px 0px #ffa91f,
       7px 7px 0px #ffa91f;
@@ -242,8 +379,17 @@ h3 {
   .translated-headline {
     margin-top: 120px;
     opacity: 0;
-    animation: slideDown 1s ease-out 3s forwards;
+    animation: slideDown 1s ease-out 2s forwards;
     margin-top: 0;
+  }
+  .topic-introduction {
+    display: block;
+    text-align: right;
+    max-width: 560px;
+    margin-left: auto;
+    font-style: italic;
+    background-color: #000000;
+    border-radius: 4px;
   }
   .stories-photos {
     margin-top: 84px;
