@@ -21,18 +21,19 @@
   <body>
     <div class="container">
       <nav>
-        <a href="./index.html">
+        <a class="nav-logo" href="./index.html">
           <img
             class="main-logo"
             src="./src/img/volley-travel.png"
             alt="volley-travel-logo"
-            width="72"
-            height="54"
+            width="120"
+            height="80"
         /></a>
-        <ul>
-          <li>About project</li>
-          <li>Sections</li>
-          <li>Contacts</li>
+        <ul class="menu-list">
+          <li><a class="menu-link" href="#about-project">Про проект</a></li>
+          <li><a class="menu-link" href="#stories">Історії</a></li>
+          <li><a class="menu-link" href="#">Нове!</a></li>
+          <li><a class="menu-link" href="#contact-list">Контакти</a></li>
         </ul>
         <button class="data-menu-open">
           <svg
@@ -66,7 +67,7 @@
 
           <h2>Мандрівниця</h2>
         </div>
-        <div class="site-description">
+        <div class="site-description" id="about-project">
           <div class="description-text">
             <h1>Виставка записок з обʼєктива</h1>
             <p>
@@ -92,7 +93,7 @@
         </div>
       </header>
       <main>
-        <h2 class="topic-name">Паризькі одкровення</h2>
+        <h2 class="topic-name" id="stories">Паризькі одкровення</h2>
         <p class="translated-headline">Confessions from Paris</p>
         <p class="topic-introduction">
           У Парижі я вперше стала собою. Серед шумних вулиць, аромату круасанів
@@ -130,14 +131,14 @@
             </p>
             <img
               class="small-story-image"
-              src="./src/img/shoes.jpg"
+              src="./src/img/shoe-signed.jpg"
               alt="My shoes in Paris"
             />
           </div>
 
           <img
             class="big-story-image"
-            src="./src/img/shoes.jpg"
+            src="./src/img/shoe-signed.jpg"
             alt="My shoes in Paris"
             width="800"
             height="480"
@@ -146,7 +147,7 @@
         <section class="stories-photos">
           <img
             class="big-story-image"
-            src="./src/img/paris-sunset.jpg"
+            src="./src/img/paris-sunset-signed.jpg"
             alt="Paris sunset"
             width="750"
             height="480"
@@ -168,7 +169,7 @@
             </p>
             <img
               class="small-story-image"
-              src="./src/img/paris-sunset.jpg"
+              src="./src/img/paris-sunset-signed.jpg"
               alt="Paris sunset"
             />
           </div>
@@ -194,13 +195,13 @@
             </p>
             <img
               class="small-story-image"
-              src="./src/img/girl-in-yellow-2.jpg"
+              src="./src/img/girl-in-yellow-signed.jpg"
               alt="Girl in yellow dress"
             />
           </div>
           <img
             class="big-story-image"
-            src="./src/img/girl-in-yellow-2.jpg"
+            src="./src/img/girl-in-yellow-signed.jpg"
             alt="Girl in yellow dress"
             width="800"
             height="480"
@@ -209,7 +210,7 @@
         <section class="stories-photos">
           <img
             class="big-story-image"
-            src="./src/img/children-and-bubbles.jpg"
+            src="./src/img/children-and-bubbles-signed.jpg"
             alt="Children and bubbles"
             width="800"
             height="480"
@@ -231,7 +232,7 @@
             </p>
             <img
               class="small-story-image"
-              src="./src/img/children-and-bubbles.jpg"
+              src="./src/img/children-and-bubbles-signed.jpg"
               alt="Children and bubbles"
             />
           </div>
@@ -254,13 +255,13 @@
             </p>
             <img
               class="small-story-image"
-              src="./src/img/old-new-Paris.jpg"
+              src="./src/img/old-city-signed.jpg"
               alt="Jump in time"
             />
           </div>
           <img
             class="big-story-image"
-            src="./src/img/old-new-Paris.jpg"
+            src="./src/img/old-city-signed.jpg"
             alt="Jump in time"
             width="800"
             height="480"
@@ -269,7 +270,7 @@
         <section class="stories-photos">
           <img
             class="big-story-image"
-            src="./src/img/vogue4.jpg"
+            src="./src/img/vogue-signed.jpg"
             alt="Street art"
             width="800"
             height="480"
@@ -288,7 +289,7 @@
             </p>
             <img
               class="small-story-image"
-              src="./src/img/vogue4.jpg"
+              src="./src/img/vogue-signed.jpg"
               alt="Street art"
             />
           </div>
@@ -312,24 +313,25 @@
             </p>
             <img
               class="small-story-image"
-              src="./src/img/candy-shop.jpg"
+              src="./src/img/candy-shop-signed.jpg"
               alt="Sweet hapiness"
             />
           </div>
           <img
             class="big-story-image"
-            src="./src/img/candy-shop.jpg"
+            src="./src/img/candy-shop-signed.jpg"
             alt="Sweet hapiness"
             width="800"
             height="480"
           />
         </section>
         <footer>
-          <ul class="contact-list">
+          <ul class="contact-list" id="contact-list">
             <li>
               <a
                 class="contact-link"
                 href="https://www.instagram.com/daria_butkevych?igsh=anB1OWloMW41NWcy&utm_source=qr"
+                target="_blank"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -345,7 +347,10 @@
               </a>
             </li>
             <li>
-              <a class="contact-link"
+              <a
+                class="contact-link"
+                href="mailto:dashusiabutkevych@gmail.com"
+                target="_blank"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"

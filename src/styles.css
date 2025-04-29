@@ -36,11 +36,15 @@ nav button {
   max-height: 36px;
   border: 1px solid #ffffff;
   border-radius: 4px;
-  background-color: #ffa91f;
+  background-color: #000000;
   transition: background-color 3ms ease-in-out;
 }
 nav button:hover {
-  background-color: #000000;
+  background-color: #ffa91f;
+}
+.nav-logo {
+  border: 1px solid #000000;
+  border-radius: 50%;
 }
 header {
   margin: 48px 0 0 0;
@@ -166,8 +170,21 @@ h3 {
 .big-story-image {
   display: none;
 }
+
+/* My stories thoughts */
 .plot-cover {
   background: url(../src/img/background-for-photos-1.png);
+}
+.back-to-main-link {
+  display: block;
+  color: #ffffff;
+  font-size: 24px;
+
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 120px;
 }
 .plot-headline {
   text-decoration: none;
@@ -269,7 +286,6 @@ svg {
   .header-name h2 {
     font-size: 84px;
   }
-
   h1 {
     font-size: 48px;
   }
@@ -299,17 +315,26 @@ svg {
     background: url(../src/img/background-for-photos-1.png);
   }
   header {
-    margin: 120px 0 0 0;
+    margin: 120px 0 120px 0;
   }
   nav ul {
     list-style: none;
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 36px;
   }
   nav button {
     display: none;
+  }
+  .menu-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+    transition: color 3ms ease-in-out;
+  }
+  .menu-link:hover {
+    color: #ffa91f;
   }
   .header-name {
     flex-direction: row;
@@ -351,7 +376,7 @@ svg {
     background-size: cover;
     padding-top: 264px;
     padding-bottom: 120px;
-    margin: 0;
+    margin: 84px 0 0 0;
   }
   h1 {
     font-size: 36px;
