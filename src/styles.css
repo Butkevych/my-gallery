@@ -7,6 +7,10 @@ body {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
 p {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
@@ -24,20 +28,34 @@ main {
 }
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 nav ul {
-  display: none;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  color: #ffffff;
+}
+.menu-link {
+  font-size: 16px;
+  transition: color 3ms ease-in-out;
+}
+.menu-link:hover {
+  color: #ffa91f;
 }
 nav button {
-  border: none;
+  display: none;
+  /* border: none;
   max-width: 48px;
   max-height: 36px;
   border: 1px solid #ffffff;
   border-radius: 4px;
   background-color: #000000;
-  transition: background-color 3ms ease-in-out;
+  transition: background-color 3ms ease-in-out; */
 }
 nav button:hover {
   background-color: #ffa91f;
@@ -131,6 +149,11 @@ h1 {
 .topic-link:hover {
   color: #ffffff;
   border-color: #ffffff;
+}
+.music-link {
+  display: block;
+  margin: auto 0;
+  text-align: center;
 }
 .stories-photos {
   display: flex;
@@ -277,6 +300,16 @@ svg {
   .container {
     max-width: 758px;
   }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+  }
   header {
     margin: 56px 0 0 0;
   }
@@ -318,20 +351,12 @@ svg {
   header {
     margin: 120px 0 120px 0;
   }
-  nav ul {
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    gap: 36px;
-  }
+
   nav button {
     display: none;
   }
   .menu-link {
-    text-decoration: none;
     font-size: 24px;
-    color: #ffffff;
     transition: color 3ms ease-in-out;
   }
   .menu-link:hover {
@@ -416,6 +441,11 @@ svg {
     font-style: italic;
     background-color: #000000;
     border-radius: 4px;
+  }
+  .music-link {
+    text-align: right;
+    margin-left: auto;
+    max-width: 200px;
   }
   .stories-photos {
     margin-top: 84px;
