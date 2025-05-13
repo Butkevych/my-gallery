@@ -41,7 +41,7 @@ nav ul {
   color: #ffffff;
 }
 .menu-link {
-  font-size: 16px;
+  font-size: 24px;
   transition: color 3ms ease-in-out;
 }
 .menu-link:hover {
@@ -356,7 +356,6 @@ svg {
     display: none;
   }
   .menu-link {
-    font-size: 24px;
     transition: color 3ms ease-in-out;
   }
   .menu-link:hover {
