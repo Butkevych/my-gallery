@@ -12,7 +12,7 @@ a {
   color: #ffffff;
 }
 p {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -165,6 +165,7 @@ h1 {
   display: block;
   max-width: 320px;
   margin: 0 auto;
+  font-size: 24px;
 }
 h3 {
   font-family: "Pacifico", cursive;
