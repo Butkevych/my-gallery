@@ -116,6 +116,8 @@ h1 {
   margin: 8px 8px;
   text-align: center;
   font-size: 20px;
+  font-family: "Rock Salt", "Playfair Display", cursive, serif;
+  font-weight: 400;
 }
 .topic-name {
   margin-top: 48px;
@@ -150,6 +152,9 @@ h1 {
 .topic-link:hover {
   color: #ffffff;
   border-color: #ffffff;
+}
+.additional-story {
+  display: none;
 }
 .music-link {
   display: block;
@@ -442,6 +447,14 @@ svg {
     font-style: italic;
     background-color: #000000;
     border-radius: 4px;
+    font-family: "Rock Salt", "Playfair Display", cursive, serif;
+    font-weight: 400;
+  }
+  .additional-story {
+    display: block;
+    text-align: right;
+    margin-left: auto;
+    max-width: 480px;
   }
   .music-link {
     text-align: right;
