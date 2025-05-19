@@ -202,7 +202,9 @@ h3 {
 .big-story-image {
   display: none;
 }
-
+.big-image-tall {
+  display: none;
+}
 /* My stories thoughts */
 .plot-cover {
   background: url(../src/img/background-for-photos-1.png);
