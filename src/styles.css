@@ -167,12 +167,14 @@ h1 {
   gap: 16px;
   margin: 48px auto;
 }
+
 .story-content {
   display: block;
   max-width: 320px;
   margin: 0 auto;
   font-size: 24px;
 }
+
 h3 {
   font-family: "Pacifico", cursive;
   font-weight: 400;
@@ -468,6 +470,20 @@ svg {
     flex-direction: row;
     gap: 32px;
   }
+  .stories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .stories-tall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+  }
   .story-content {
     width: 480px;
   }
@@ -485,6 +501,14 @@ svg {
     display: block;
     border-radius: 16px;
     box-shadow: inset 0px 0px 24px rgba(255, 255, 255, 0.6);
+    max-width: 650px;
+  }
+  .big-image-tall {
+    display: block;
+    border-radius: 16px;
+    box-shadow: inset 0px 0px 24px rgba(255, 255, 255, 0.6);
+    max-width: 480px;
+    max-height: 900px;
   }
 }
 /* 
